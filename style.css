@@ -22,6 +22,7 @@ html {
 .container {
   max-width: 144rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav {
@@ -29,7 +30,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 13rem;
+  width: 100%;
+  background: #fff;
   height: 8rem;
+  z-index: 2;
+  position: relative;
 }
 nav .logo img {
   width: 15rem;
@@ -54,6 +59,53 @@ nav .menu .menu-item:hover {
   border-bottom: 0.5rem solid var(--color2);
   color: var(--color1);
 }
+#home {
+  width: 100%;
+  height: 60rem;
+  background: linear-gradient(var(--color5), var(--color7));
+  display: flex;
+}
+#home .home-first {
+  width: 45%;
+  display: flex;
+  padding-left: 10rem;
+  flex-direction: column;
+  justify-content: center;
+}
+#home .home-first .first-title {
+  font-size: 4rem;
+  width: 40rem;
+  font-weight: 400;
+  color: var(--color1);
+}
+#home .home-first .first-text {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  width: 45rem;
+  font-size: 1.8em;
+  color: var(--color4);
+  line-height: 2.5rem;
+}
+#home .home-second {
+  background-image: url("images/bg-intro-desktop.svg");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1050px 90%;
+  width: 55%;
+}
+#home .home-second img {
+  position: relative;
+  top: -18%;
+  right: -20%;
+}
+
+#why-choose-easybank {
+  width: 100%;
+  height: 80rem;
+  background: var(--color5);
+}
+
 .button-style {
   width: 15rem;
   height: 4.5rem;
