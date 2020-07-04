@@ -36,6 +36,9 @@ nav {
   z-index: 2;
   position: relative;
 }
+nav .hamburger-menu {
+  display: none;
+}
 nav .logo img {
   width: 15rem;
 }
@@ -61,13 +64,13 @@ nav .menu .menu-item:hover {
 }
 #home {
   width: 100%;
-  height: 60rem;
   background: linear-gradient(var(--color5), var(--color7));
   display: flex;
 }
 #home .home-first {
   width: 45%;
   display: flex;
+  padding: 2rem;
   padding-left: 10rem;
   flex-direction: column;
   justify-content: center;
@@ -96,14 +99,123 @@ nav .menu .menu-item:hover {
 }
 #home .home-second img {
   position: relative;
+  width: 100%;
   top: -18%;
   right: -20%;
 }
 
 #why-choose-easybank {
   width: 100%;
-  height: 80rem;
   background: var(--color5);
+  padding: 10rem;
+}
+#why-choose-easybank .easybank-title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--color1);
+  margin-bottom: 1rem;
+}
+#why-choose-easybank .easybank-text {
+  color: var(--color4);
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  width: 65rem;
+}
+#why-choose-easybank .services-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+#why-choose-easybank .services-cards .card {
+  margin: 2rem 0;
+  width: 30rem;
+  padding-right: 2rem;
+}
+#why-choose-easybank .services-cards .card .card-name {
+  font-size: 2.5rem;
+  color: var(--color1);
+  font-weight: 400;
+  margin: 2.5rem 0;
+  margin-top: 3.5rem;
+}
+#why-choose-easybank .services-cards .card .card-description {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color4);
+}
+
+#latest-articles {
+  width: 100%;
+  padding: 10rem;
+  background: var(--color6);
+}
+#latest-articles .page-title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--color1);
+  margin-bottom: 2rem;
+}
+#latest-articles .your-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#latest-articles .your-options .card {
+  width: 28rem;
+  height: 45rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+#latest-articles .your-options .card img {
+  width: 100%;
+  height: 20rem;
+}
+#latest-articles .your-options .card .card-second {
+  width: 100%;
+  padding: 2rem;
+}
+#latest-articles .your-options .card .card-second .card-author {
+  color: var(--color4);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+#latest-articles .your-options .card .card-second .card-name {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--color1);
+  margin-bottom: 1rem;
+}
+#latest-articles .your-options .card .card-second .card-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color4);
+}
+#latest-articles .your-options .card:hover .card-name {
+  color: var(--color2);
+}
+
+.footer {
+  display: flex;
+  background: var(--color1);
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+}
+.footer svg path {
+  fill: currentcolor;
+}
+.footer svg {
+  margin-right: 2rem;
 }
 
 .button-style {

@@ -1,0 +1,44 @@
+html{
+    font-size: 8px;
+}
+
+nav{
+    .menu{
+        display: none;
+    }
+    .request-invite{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+}
+nav{
+    padding: 2rem;
+}
+
+#home{
+    flex-direction: column;
+    .home-second{
+        width: 100%;
+        order:1;
+        img{
+            right:0;
+        }
+    }
+    .home-first{
+        width: 100%;
+        order: 2;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        padding:0;
+        padding:5rem 0;
+        p{
+            text-align:center;
+        }
+        \h2{
+            text-align:center;
+        }
+    }
+}

@@ -35,6 +35,9 @@ nav{
     height: 8rem;
     z-index: 2;
     position: relative;
+    .hamburger-menu{
+        display: none;
+    }
     .logo{
         img{
             width: 15rem;
@@ -69,13 +72,13 @@ nav{
 
 #home{
     width: 100%;
-    height: 60rem;
     background: linear-gradient(var(--color5), var(--color7));
 
     display: flex;
     .home-first{
         width: 45%;
         display: flex;
+        padding: 2rem;
         padding-left: 10rem;
         flex-direction: column;
         justify-content: center;
@@ -105,6 +108,7 @@ nav{
         width:55%;
         img{
             position: relative;
+            width: 100%;
             top: -18%;
             right: -20%;
         }
@@ -114,11 +118,120 @@ nav{
 
 #why-choose-easybank{
     width: 100%;
-    height: 80rem;
     background: var(--color5);
+    padding:10rem;
+    .easybank-title{
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(--color1);
+        margin-bottom: 1rem;
+    }
+    .easybank-text{
+        color: var(--color4);
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        width: 65rem;
+    }
+    .services-cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        .card{
+            margin: 2rem 0;
+            width: 30rem;
+            padding-right: 2rem;
+            .card-name{
+                font-size: 2.5rem;
+                color: var(--color1);
+                font-weight: 400;
+                margin: 2.5rem 0;
+                margin-top: 3.5rem;
+            }
+            .card-description{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: var(--color4);
+            }
+        }
+
+    }
 }
 
 
+#latest-articles{
+    width: 100%;
+    padding: 10rem;
+    background: var(--color6);
+    .page-title{
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(--color1);
+        margin-bottom: 2rem;
+    }
+    .your-options{
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+        flex-wrap: wrap;
+        align-content: center;
+        .card{
+            width: 28rem;
+            height: 45rem;
+            margin: 2rem 0;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 20rem;
+            }
+            .card-second{
+                width: 100%;
+                padding: 2rem;
+                .card-author{
+                    color: var(--color4);
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    margin-bottom: 1rem;
+                }
+                .card-name{
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    color: var(--color1);
+                    margin-bottom: 1rem;
+
+                }
+                .card-description{
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    color: var(--color4);
+                }
+            }
+            &:hover .card-name{
+                color: var(--color2);
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    align-content: center;
+    padding: 2rem; 
+    color: white;
+    font-size: 1.6rem;
+    svg path{
+        fill: currentcolor;
+    }
+    svg{
+        margin-right: 2rem;
+    }
+}
 
 .button-style{
     width: 15rem;

@@ -1,0 +1,45 @@
+html {
+  font-size: 8px;
+}
+
+nav .menu {
+  display: none;
+}
+nav .request-invite {
+  display: none;
+}
+nav .hamburger-menu {
+  display: block;
+}
+
+nav {
+  padding: 2rem;
+}
+
+#home {
+  flex-direction: column;
+}
+#home .home-second {
+  width: 100%;
+  order: 1;
+}
+#home .home-second img {
+  right: 0;
+}
+#home .home-first {
+  width: 100%;
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  padding: 5rem 0;
+}
+#home .home-first p {
+  text-align: center;
+}
+#home .home-first h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=mobile.css.map */
